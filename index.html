@@ -11,6 +11,7 @@
             background-size: cover; /* This makes the image cover the entire background */
             background-repeat: no-repeat; /* This prevents the image from repeating */
             background-position: center; /* This centers the image */
+            display: flex;
         }
 
         .logo {
@@ -19,10 +20,11 @@
             right: 30px;
         }
         .logo img {
-            width: 75px; /* Adjust the size as needed */
+            width: 74px; /* Adjust the size as needed */
             height: auto; /* Maintain aspect ratio */
         }
-	h1 {
+       
+        h1 {
             background-color: lightgreen;
             text-align: center;
             font-size: 35px;
@@ -31,7 +33,6 @@
         h2 {
             font-size: 17px;
             color: blue;
-	    text-align: center;
         }
         ul {
             list-style-type: none;
@@ -41,17 +42,36 @@
             margin: 10px 0;
         }
 
+        .content {
+            flex: 1;
+            /* Your existing styles */
+        }
+
+        .new-image {
+    position: absolute;
+    top: 40;
+    right: 0;
+    width: 50%;  /* Take up the full right half */
+    height: 80vh; /* Full viewport height */
+    overflow: hidden; /* Ensure no overflow issues */
+}
+
+.new-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure it fills the right half without distortion */
+}
 
         img {
             width: 30px; /* Adjusted size */
-            height: auto; /* Maintain aspect ratio */
-            margin-right: 10px;
+            height: 20px; /* Maintain aspect ratio */
+            margin-right: 40px;
             vertical-align: middle;
             background-color: lightgreen; /* Set background color for images */
         }
         footer {
             margin-top: 20px;
-	    color: blue;
+            color: blue;
             text-align: center;
         }
     </style>
@@ -61,12 +81,11 @@
         <img src="https://raw.githubusercontent.com/testcase-docs/image/main/Picture1.png"> <!-- Replace with your logo URL -->
     </div>
 
-    <h1>Industry Mind --> Test Oasis</h1>
-    <h2>
-	     On this screen, you can explore test cases across multiple domains to enhance quality assurance and ensure software reliability.  <br>
-	     Click on a domain of interest to view the test cases. 
-    </h2>
-    <ul>
+    <div class="content">
+        <h1>Industry Mind --> Test Oasis</h1>
+        <h2>On this screen, you can explore test cases across multiple domains to enhance quality assurance and ensure software reliability. Click on a domain of interest to view the test cases.</h2>
+       <ul>
+	<img src="C:\Users\sasikalk\Downloads\data-engineering-pop-cl.png" alt="New Image" class="new-image"> <!-- Replace with your new image URL -->
         <li><img src="https://raw.githubusercontent.com/testcase-docs/Images/main/download.png" alt="Aerospace and Defence"><a href="https://capgemini.sharepoint.com/:x:/r/sites/Sogeti100certification/Shared%20Documents/General/Competency%202025/Domain%20based%20Trainings/Domain%20-%20Test%20Scenario%20listing/Sogeti%20QE%26T%20Aerospace%20and%20Defence%20BPML.xlsx?d=w61dcabb8d1e64e0b9b9a2b17139cba3a&csf=1&web=1&e=Fgibgl" target="_blank">1. Aerospace and Defence</a></li>
         <li><img src="https://raw.githubusercontent.com/testcase-docs/Images/main/images.png" alt="Artificial Intelligence and Machine Learning"><a href="https://capgemini.sharepoint.com/:x:/r/sites/Sogeti100certification/Shared%20Documents/General/Competency%202025/Domain%20based%20Trainings/Domain%20-%20Test%20Scenario%20listing/Sogeti%20QE%26T%20Artificial%20Intelligence%20and%20Machine%20Learning_BPML.xlsx?d=w9c7194a10f3d408ea6a6242c53b183ea&csf=1&web=1&e=LaJIvt" target="_blank">2. Artificial Intelligence and Machine Learning</a></li>
         <li><img src="https://raw.githubusercontent.com/testcase-docs/Images/main/images (1).png" alt="Automotive Domain"><a href="https://capgemini.sharepoint.com/:x:/r/sites/Sogeti100certification/Shared%20Documents/General/Competency%202025/Domain%20based%20Trainings/Domain%20-%20Test%20Scenario%20listing/Sogeti%20QE%26T%20Automative%20Industry%20BPML.xlsx?d=w4a6d924095804b20917c6b7392575c1e&csf=1&web=1&e=ViYsx6" target="_blank">3. Automotive Domain</a></li>
@@ -91,6 +110,7 @@
         <li><img src="https://raw.githubusercontent.com/testcase-docs/Images/main\download (8).jpg" alt="OEM(Original Equipment Manufacturer)"><a href="https://capgemini.sharepoint.com/:x:/r/sites/Sogeti100certification/Shared%20Documents/General/Competency%202025/Domain%20based%20Trainings/Domain%20-%20Test%20Scenario%20listing/Sogeti%20QE%26T%20OEM(Original%20Equipment%20Manufacturer)%20BPML.xlsx?d=w7086ea17984c4f1a9ba5dc7ade002394&csf=1&web=1&e=cLRo6C" target="_blank">22.OEM(Original Equipment Manufacturer)</a></li>
 	<li><img src="https://raw.githubusercontent.com/testcase-docs/Images/main\download (10).png" alt="Parts and Service"><a href="https://capgemini.sharepoint.com/:x:/r/sites/Sogeti100certification/Shared%20Documents/General/Competency%202025/Domain%20based%20Trainings/Domain%20-%20Test%20Scenario%20listing/Sogeti%20QE%26T%20Parts%20%26%20Services%20BPML.xlsx?d=wcd32c20d07534609a0d97a011ff45da3&csf=1&web=1&e=4L3tbI" target="_blank">23.Parts and Service</a></li>
         <li><img src="https://raw.githubusercontent.com/testcase-docs/Images/main\images (8).jpg" alt="Pharma"><a href="https://capgemini.sharepoint.com/:x:/r/sites/Sogeti100certification/Shared%20Documents/General/Competency%202025/Domain%20based%20Trainings/Domain%20-%20Test%20Scenario%20listing/Sogeti%20QE%26T%20Pharma%20BPML.xlsx?d=wc09de9420902461aa450a7264ba653db&csf=1&web=1&e=L8o5cI" target="_blank">24.Pharma</a></li>
+
         <li><img src="https://raw.githubusercontent.com/testcase-docs/Images/main\download (11).png" alt="POS-Point of Sales"><a href="https://capgemini.sharepoint.com/:x:/r/sites/Sogeti100certification/Shared%20Documents/General/Competency%202025/Domain%20based%20Trainings/Domain%20-%20Test%20Scenario%20listing/Sogeti%20QE%26T%20POS%20Point%20Of%20Sales%20BPML.xlsx?d=w615bf985b2164b359537dd50352f498c&csf=1&web=1&e=ORK8jb" target ="_blank">25.POS-Point of Sales</a></li>
         <li><img src="https://raw.githubusercontent.com/testcase-docs/Images/main\images (10).png" alt="POSDM-Point of Sales Data Management"><a href="https://capgemini.sharepoint.com/:x:/r/sites/Sogeti100certification/Shared%20Documents/General/Competency%202025/Domain%20based%20Trainings/Domain%20-%20Test%20Scenario%20listing/Sogeti%20QE%26T%20POSDM%20Point%20Of%20Sales%20Data%20Managemnet%20BMLP.xlsx?d=w6a67abc2d13a4046938dd3454c41dbb5&csf=1&web=1&e=fZMEGb" target="_blank">26.POSDM-Point of Sales Data Management</a></li>
 	<li><img src="https://raw.githubusercontent.com/testcase-docs/Images/main\download (13).png" alt="Procurement"><a href="https://capgemini.sharepoint.com/:x:/r/sites/Sogeti100certification/Shared%20Documents/General/Competency%202025/Domain%20based%20Trainings/Domain%20-%20Test%20Scenario%20listing/Sogeti%20QE%26T%20Procurement%20BPML.xlsx?d=w1a71e2d001044675847c887178241f40&csf=1&web=1&e=450urc"target="_blank">27.Procurement</a></li>
@@ -106,9 +126,11 @@
 <li><a href="https://degreed.com/plan/3231199?newWindow=true" target="_blank">Domain Trainings Learning Pathway 2</a></li>
 
 
-    </div>
+    </div>  
+    
+
     <footer>
-        <p>Thank you to all the participants for going through the test cases. <strong>Happy Learning! 🎉</strong></p>
+        <!-- Your footer content here -->
     </footer>
 </body>
 </html>
